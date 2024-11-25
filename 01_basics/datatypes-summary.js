@@ -36,8 +36,8 @@ const heros = ["shaktiman", "naagraj", "doga"]
 // Objects
 
 let myObj= {
-    "name": "Vinay Kumar",
-    "age": 25
+    name: "Vinay Kumar",
+    age: 25
 }
 
 // Function
@@ -57,3 +57,33 @@ console.log(typeof id) // symbol
 
 
 // https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++
+// Types of Memory: Stack and Keap
+
+// Stack(Primitive):- (LIFO)-copy milti hai value ki   and Heap(Non-Primitive):- original value ka refrence
+
+
+let myYoutubename = "hiteshchaundharydotcom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename)
+console.log(anothername)
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"  
+}
+
+// stack m jayega- userOne   heap-{email: "user@google.com",upi: "user@ybl"}
+let userTwo = userOne
+
+userTwo.email ="hitesh@google.com"
+
+console.log(userOne.email); 
+console.log(userTwo.email);
